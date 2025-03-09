@@ -48,7 +48,7 @@ void QuizGame::startQuiz() {
 }
 
 void QuizGame::chooseChapter() {
-    cout << "Scegli un capitolo da 1 a 1 (altri ancora non disponibilis)." << endl;
+    cout << "Scegli un capitolo da 1 a 2 (altri ancora non disponibilis)." << endl;
     int chapterChoice;
     cin >> chapterChoice;
     

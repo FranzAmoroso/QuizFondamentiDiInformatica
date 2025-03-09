@@ -13,7 +13,7 @@ public:
 private:
     void loadQuestions();
     std::vector<Question> chapterOne;
-    std::vector<Question> mediumQuestions;
+    std::vector<Question> chapterTwo;
     std::vector<Question> hardQuestions;
 };
 

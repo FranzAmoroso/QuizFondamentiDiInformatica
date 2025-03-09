@@ -53,7 +53,7 @@ void QuizGame::chooseChapter() {
     cin >> chapterChoice;
     
     // Imposta il capitolo selezionato
-    if (chapterChoice == 1) {
+    if (chapterChoice == 1 || chapterChoice == 2) {
         chapter = chapterChoice;
         cout << "Hai scelto Capitolo " << chapter << "." << endl;
     } else {

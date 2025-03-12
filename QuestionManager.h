@@ -14,7 +14,8 @@ private:
     void loadQuestions();
     std::vector<Question> chapterOne;
     std::vector<Question> chapterTwo;
-    std::vector<Question> hardQuestions;
+    std::vector<Question> chapterTree;
+    std::vector<Question> chapterFor;
 };
 
 #endif

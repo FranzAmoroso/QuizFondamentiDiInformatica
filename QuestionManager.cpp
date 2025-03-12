@@ -9,61 +9,67 @@ QuestionManager::QuestionManager() {
 void QuestionManager::loadQuestions() {
     // Domande capitolo 1
     
-    chapterOne.push_back(Question("Cosa si intende per alfabeto in informatica?", 
-                              {"Un insieme finito non vuoto di simboli", 
-                               "Una stringa di simboli", 
-                               "Un insieme infinito di caratteri", 
-                               "Un linguaggio di programmazione"}, 
+    chapterOne.push_back(Question("Sia Σ alfabeto finito. Segnare, fra le affermazioni seguenti, l'unica affermazione esatta:", 
+                              {"ε ∉ L+ per ogni L ⊆ Σ*", 
+                               "ε ⊆ Σ", 
+                               "Sia L ⊆ Σ*. Allora ε ∈ L+ se e solo se  ε ∈ L", 
+                               "ε ∉ L* per ogni L ⊆ Σ*"}, 
+                              2));
+
+chapterOne.push_back(Question("Sia Σ alfabeto finito. Segnare, fra le affermazioni seguenti, l'unica affermazione sbagliata:", 
+                              {"Per ogni L1,L2 ⊆ Σ*, L1 = L1 ◦ L2", 
+                               "Esistono L1,L2 ⊆ Σ*,  tali che L1 x L2 ≠ L2 x L1", 
+                               "Per ogni L1,L2 ⊆ Σ*, L1 ⊆ L1 ◦ L2 se e solo se ε ∈ L2", 
+                               "Esistono L1,L2 ⊆ Σ*,  tali che L1 ◦ L2 ≠ L2 ◦ L1"}, 
                               0));
 
-chapterOne.push_back(Question("Quale tra i seguenti è un esempio di alfabeto?", 
-                              {"{0,1}", 
-                               "{A,B,C,D}", 
-                               "{a-z, A-Z, 0-9, +, -, *}", 
-                               "Tutte le precedenti"}, 
+chapterOne.push_back(Question("Sia Σ alfabeto finito. Segnare, fra le affermazioni seguenti, l'unica affermazione esatta:", 
+                              {"Per ogni L ⊆ Σ*, ε ∉ L*", 
+                               "Per ogni L ⊆ Σ*,L+ = L*/{ε}", 
+                               "Per ogni L ⊆ Σ*,ε ∈ L+", 
+                               "Per ogni L ⊆ Σ*,L* = L+ U {ε}"}, 
                               3));
 
-chapterOne.push_back(Question("Cos'è un monoide sintattico?", 
-                              {"Un insieme di stringhe con un'operazione di concatenazione e un elemento neutro", 
-                               "Un linguaggio di programmazione", 
-                               "Un metodo per comprimere stringhe", 
-                               "Un sottoinsieme dell'alfabeto"}, 
+chapterOne.push_back(Question("Sia Σ alfabeto finito e sia L ⊆ Σ*. Segnare, fra le affermazioni seguenti, l'unica affermazione esatta:", 
+                              {"sia ε ∈ L, allora ε ∉ L", 
+                               "ε ∈ Σ", 
+                               "se ε ∈ L, allora ε ∈ L+", 
+                               "Nessuna delle risposte è esatta."}, 
+                              2));
+chapterOne.push_back(Question("Siano L1 = {ε, aba, ba} ed L2 = {ε, aa,bb}. Segnare, fra le affermazioni seguenti, l'unica affermazione SBAGLIATA:", 
+                              {"ε ∈ L1 ◦ L2", 
+                               "aba ∉ L1 ◦ L2", 
+                               "L1 ⊆ L1 ◦ L2", 
+                               "L2 ⊆ L1 ◦ L2"}, 
+                              1));
+
+chapterOne.push_back(Question("Sia Σ alfabeto finito. Segnare, fra le affermazioni seguenti, l'unica affermazione esatta:", 
+                              {"ε ∈ Σ+", 
+                               "Per ogni L ⊆ Σ*,ε ∈ L", 
+                               "ε ∈ Σ*", 
+                               "Per ogni L ⊆ Σ*,ε ∉ L"}, 
+                              2));
+
+chapterOne.push_back(Question("Sia Σ alfabeto finito e sia L ⊆ Σ*. Segnare, fra le affermazioni seguenti, l'unica affermazione esatta:?", 
+                              {"Nessuna delle risposte è esatte", 
+                               "Per ogni L,ε ∈ L", 
+                               "Se ε ∈ L+, allora ε ∈ L", 
+                               "Per ogni L,ε ∈ L ◦ L"}, 
+                              2));
+
+chapterOne.push_back(Question("Sia Σ alfabeto finito. Segnare, fra le affermazioni seguenti, l'unica affermazione esatta:", 
+                              {"Λ ◦ Λ = {ε}", 
+                               "Λ ◦ Λ = Λ", 
+                               "Per ogni L ⊆ Σ*,L ◦ Λ = L", 
+                               "Λ ◦ {ε} = {ε}"}, 
                               0));
 
-chapterOne.push_back(Question("Cosa rappresenta l'elemento ε nel monoide sintattico?", 
-                              {"La stringa vuota", 
-                               "Il simbolo di fine riga", 
-                               "Un carattere speciale dell'alfabeto", 
-                               "Un'operazione di concatenazione"}, 
-                              0));
-
-chapterOne.push_back(Question("Quale tra le seguenti affermazioni è vera sulla concatenazione di stringhe?", 
-                              {"Non è commutativa", 
-                               "È sempre commutativa", 
-                               "Restituisce sempre una stringa vuota", 
-                               "Non può essere applicata a stringhe vuote"}, 
-                              0));
-
-chapterOne.push_back(Question("Cosa indica la notazione |x| per una stringa x?", 
-                              {"La lunghezza della stringa", 
-                               "Il valore numerico della stringa", 
-                               "Il numero di simboli distinti nella stringa", 
-                               "La posizione della stringa nell'alfabeto"}, 
-                              0));
-
-chapterOne.push_back(Question("Cosa succede quando una stringa x viene concatenata con la stringa vuota ε?", 
-                              {"Rimane invariata", 
-                               "Diventa la stringa vuota", 
-                               "Si duplica", 
-                               "Si annulla"}, 
-                              0));
-
-chapterOne.push_back(Question("Come viene indicata la concatenazione iterata di una stringa con sé stessa h volte?", 
-                              {"xh", 
-                               "x*h", 
-                               "h(x)", 
-                               "repeat(x, h)"}, 
-                              0));
+chapterOne.push_back(Question("Cosa è un riconoscitore?", 
+                              {"strumento che riconosce gli automi", 
+                               "automi che riconoscono i riconoscitori", 
+                               "Strumento che riconosce insieme di stringhe", 
+                               "Strumento che riconosce insieme di linguaggi"}, 
+                              2));
 
 chapterOne.push_back(Question("Qual è la convenzione per rappresentare i caratteri dell'alfabeto Σ?", 
                               {"Con le prime lettere minuscole dell'alfabeto latino", 
@@ -72,7 +78,7 @@ chapterOne.push_back(Question("Qual è la convenzione per rappresentare i caratt
                                "Con lettere maiuscole dell'alfabeto latino"}, 
                               0));
 
-chapterOne.push_back(Question("Come si definisce un linguaggio in informatica?", 
+chapterOne.push_back(Question("Qual'è il simbolo di Blank?", 
                               {"Un sottoinsieme di Σ∗", 
                                "Un insieme di numeri", 
                                "Un insieme infinito di parole", 
@@ -114,12 +120,12 @@ chapterOne.push_back(Question("Qual è l'elemento neutro della concatenazione di
                                "Un numero"}, 
                               0));
 
-chapterOne.push_back(Question("Cosa succede se concateno una stringa con se stessa 0 volte?", 
+/* chapterOne.push_back(Question("Cosa succede se concateno una stringa con se stessa 0 volte?", 
                               {"Ottengo la stringa vuota", 
                                "Ottengo la stringa stessa", 
                                "Ottengo una stringa infinita", 
                                "Ottengo una stringa con un solo carattere"}, 
-                              0));
+                              0)); */
 
 chapterOne.push_back(Question("Quale dei seguenti non è un esempio di alfabeto?", 
                               {"{1,2,3,4,5}", 
@@ -914,7 +920,8 @@ chapterOne.push_back(Question("Quale tra queste è una proprietà della concaten
 vector<Question> QuestionManager::getQuestions(int difficulty) const {
     if (difficulty == 1) return chapterOne;
     if (difficulty == 2) return chapterTwo;
-    return hardQuestions;
+    if (difficulty == 3) return chapterTree;
+    if (difficulty == 4) return chapterFor;
 }
 
 void QuestionManager::askQuestion(const Question& question) const {

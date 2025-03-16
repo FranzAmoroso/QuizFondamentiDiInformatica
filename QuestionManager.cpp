@@ -7,7 +7,7 @@ QuestionManager::QuestionManager() {
 }
 
 void QuestionManager::loadQuestions() {
-    // Domande capitolo 1
+    // Domande
     
     chapterOne.push_back(Question("Sia Σ alfabeto finito. Segnare, fra le affermazioni seguenti, l'unica affermazione esatta:", 
                               {"ε ∉ L+ per ogni L ⊆ Σ*", 
@@ -921,7 +921,7 @@ vector<Question> QuestionManager::getQuestions(int difficulty) const {
     if (difficulty == 1) return chapterOne;
     if (difficulty == 2) return chapterTwo;
     if (difficulty == 3) return chapterTree;
-    if (difficulty == 4) return chapterFor;
+    return chapterFor;
 }
 
 void QuestionManager::askQuestion(const Question& question) const {

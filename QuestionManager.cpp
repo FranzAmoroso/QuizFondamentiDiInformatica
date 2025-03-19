@@ -63,47 +63,84 @@ chapterOne.push_back(Question("Sia Σ alfabeto finito. Segnare, fra le affermazi
                                "Per ogni L ⊆ Σ*,L ◦ Λ = L", 
                                "Λ ◦ {ε} = {ε}"}, 
                               0));
+    chapterOne.push_back(Question("Quali operazioni \"insiemistiche\" binarie possiamo definire sui linguaggi?", 
+                                {"intersezione, complemento e unione", 
+                                 "intersezione, unione e iterazione", 
+                                 "intersezione, unione e concatenazione", 
+                                 "complemento e iterazione"}, 
+                                2));
 
-chapterOne.push_back(Question("Cosa è un riconoscitore?", 
-                              {"strumento che riconosce gli automi", 
-                               "automi che riconoscono i riconoscitori", 
-                               "Strumento che riconosce insieme di stringhe", 
-                               "Strumento che riconosce insieme di linguaggi"}, 
-                              2));
+chapterOne.push_back(Question("Quali operazioni \"insiemistiche\" unarie possiamo definire sui linguaggi?", 
+                                {"intersezione, complemento e unione", 
+                                 "intersezione, unione e iterazione", 
+                                 "intersezione, unione e concatenazione", 
+                                 "complemento e iterazione"}, 
+                                3));
 
 chapterOne.push_back(Question("Qual è la convenzione per rappresentare i caratteri dell'alfabeto Σ?", 
                               {"Con le prime lettere minuscole dell'alfabeto latino", 
                                "Con numeri da 0 a 9", 
                                "Con simboli speciali", 
-                               "Con lettere maiuscole dell'alfabeto latino"}, 
+                               "Con le ultime lettere minuscole dell'alfabeto latino"}, 
                               0));
+chapterOne.push_back(Question("Quali delle seguenti affermazioni è esatta?", 
+                              {"L, ε ∈ L+", 
+                               "L, ε ∈ L*", 
+                               "Λ = {ε}", 
+                               "Λ° ≠ {ε}"}, 
+                              1));
+chapterOne.push_back(Question("Quale dei seguenti metodi e Riconoscitivo?", 
+                              {"Prende in input una stringa e ci dice se essa appartiene al linguaggio o no, La stringa viene definita con un numero finito di elementi.", 
+                               "Prende in output una stringa e ci dice se essa appartiene al linguaggio o no, La stringa viene definita con un numero finito di elementi.", 
+                               "Partono da un simbolo iniziale a un'insieme finito di regole e da li generano le stringhe del linguaggio detti grammatiche", 
+                               "Partono da una stringa iniziale a un'insieme finito di stringhe e da li generano dei linguaggi con un numero finito di elementi."}, 
+                              0));
+chapterOne.push_back(Question("Quale dei seguenti metodi e generativo?", 
+                              {"Prende in input una stringa e ci dice se essa appartiene al linguaggio o no, La stringa viene definita con un numero finito di elementi.", 
+                               "Prende in output una stringa e ci dice se essa appartiene al linguaggio o no, La stringa viene definita con un numero finito di elementi.", 
+                               "Partono da un simbolo iniziale a un'insieme finito di regole e da li generano le stringhe del linguaggio detti grammatiche", 
+                               "Partono da una stringa iniziale a un'insieme finito di stringhe e da li generano dei linguaggi con un numero finito di elementi."}, 
+                              2));
 
-chapterOne.push_back(Question("Qual'è il simbolo di Blank?", 
-                              {"Un sottoinsieme di Σ∗", 
+
+chapterOne.push_back(Question("Cosa indica il simbolo di Blank?", 
+                              {"la mancanza di un elemento nella cella.", 
                                "Un insieme di numeri", 
                                "Un insieme infinito di parole", 
                                "Un alfabeto ordinato"}, 
                               0));
+chapterOne.push_back(Question("Avendo un Automa a stati finiti qual'è la definizione della funzione di transizione ?", 
+                              {"F : δ x Σ -> Q", 
+                               "Q : δ x Σ -> Q", 
+                               "δ : Q x Σ -> Q", 
+                               "δ : F x Σ -> Q"}, 
+                              2));
 
-chapterOne.push_back(Question("Quale delle seguenti affermazioni su un alfabeto Σ è corretta?", 
-                              {"Un alfabeto è sempre un linguaggio", 
-                               "Un alfabeto non è mai un linguaggio", 
-                               "Un alfabeto contiene solo simboli numerici", 
-                               "Un alfabeto non può avere più di 10 simboli"}, 
-                              0));
+chapterOne.push_back(Question("Dato un autma a stati finiti deterministico A = <Σ, Q, δ, q0, F> e due configurazioni (q, x) w (q',y) di A, avremo che (q,x) |- (q',y) se: ", 
+                              {"(q,x) |- (q',y)", 
+                               "1. Esiste a ∈ Σtale che x = ay, 2. δ(q, a) = q'", 
+                               "1. Esiste a ∈ Σ tale che x = ay, 2. δ(q', a) = q", 
+                               "1. Esiste a ∈ Σ tale che y = ax, 2. δ(q, a) = q'"}, 
+                              1));
+chapterOne.push_back(Question("Segnare, fra le definizioni che seguono, la definizione di linguaggio riconosciuto da un Automa a Stati Finiti Deterministico A = <Σ, Q, δ, q0, F>", 
+                              {"L(A) = {x ∈ Σ* | (p, x) |-*(q,ε) con q ∈ F}", 
+                               "L(A) = {x ∈ Σ* | (q0, x) |-*(q,ε) con q ∈ F}", 
+                               "L(A) = {x ∈ Σ* | (q0, x) ∈ F}", 
+                               "L(A) = {x ∈ Q* | (q0, x) |-*(q,ε) con q ∈ F}"}, 
+                              1));
 
-chapterOne.push_back(Question("Come si indica il linguaggio vuoto?", 
-                              {"Λ", 
+chapterOne.push_back(Question("Definizione Computare", 
+                              {"Ridurre un informazione da una forma implicita a una forma esplicida in modo effettivo", 
                                "ε", 
                                "∅", 
                                "Σ∗"}, 
                               0));
 
-chapterOne.push_back(Question("Quale delle seguenti affermazioni sul linguaggio vuoto è corretta?", 
-                              {"Non contiene alcuna stringa", 
-                               "Contiene solo la stringa vuota", 
-                               "Contiene tutte le stringhe dell'alfabeto", 
-                               "È uguale a Σ∗"}, 
+chapterOne.push_back(Question("Quali sono tra i seguenti i diversi modelli computazionali?", 
+                              {"Funzioni ricorsive, L'ambda calcolo e la macchina di turing", 
+                               "Funzioni parziali, L'ambda calcolo e la macchina di turing", 
+                               "Funzione di transizione , calcolo combinatorio e la macchina di von neuman", 
+                               "Nessuna delle precedenti"}, 
                               0));
 
 chapterOne.push_back(Question("Quale di queste affermazioni è falsa?", 
@@ -251,7 +288,7 @@ chapterOne.push_back(Question("Quale tra queste è una proprietà della concaten
                                  "ε", 
                                  "∅"}, 
                                 0));
-                                chapterOne.push_back(Question("Qual è la definizione di stringa inversa (o riflessa)?", 
+    chapterOne.push_back(Question("Qual è la definizione di stringa inversa (o riflessa)?", 
                                     {"Una stringa ottenuta invertendo l’ordine dei caratteri", 
                                      "Una stringa ottenuta eliminando vocali", 
                                      "Una stringa che si ripete infinite volte", 
@@ -738,13 +775,19 @@ chapterOne.push_back(Question("Quale tra queste è una proprietà della concaten
                                                  "Linguaggio con tutte le possibili stringhe", 
                                                  "Linguaggio che contiene solo il simbolo a"}, 
                                                 0));
+        chapterTwo.push_back(Question("Sia L = { 01, 1101, 010}. Segnare fra le seguenti, l'unica affermazione esatta:", 
+                                                {"00001 ∈ L2", 
+                                                 "011101 ∈ L3", 
+                                                 "011101 ∈ L2", 
+                                                 "ε ∈ L+"}, 
+                                                2));
             
-            chapterTwo.push_back(Question("Qual è il significato dell'operatore + in un'espressione regolare?", 
-                                                {"Unione di due linguaggi", 
-                                                 "Concatenazione di due linguaggi", 
-                                                 "Chiusura di un linguaggio", 
-                                                 "Nessuna delle precedenti"}, 
-                                                0));
+            chapterTwo.push_back(Question("Sia alfabeto finito e sia L . Segnare, fra le affermazioni seguenti l'unica affermazione esatta:", 
+                                                {"ε ∈", 
+                                                 "Se ε ∈ L, allora ε ∈ L+", 
+                                                 "Se ε ∈ L, allora ε ∉ L+", 
+                                                 "Nessuna delle risposte è esatta precedenti"}, 
+                                                1));
             
             chapterTwo.push_back(Question("Come si interpreta l’espressione regolare (s + t)?", 
                                                 {"L’unione dei linguaggi s e t", 

@@ -143,61 +143,61 @@ chapterOne.push_back(Question("Quali sono tra i seguenti i diversi modelli compu
                                "Nessuna delle precedenti"}, 
                               0));
 
-chapterOne.push_back(Question("Quale di queste affermazioni è falsa?", 
-                              {"La concatenazione di stringhe è commutativa", 
-                               "L'elemento neutro della concatenazione è la stringa vuota", 
-                               "Le stringhe sono elementi di Σ∗", 
-                               "Un linguaggio è un sottoinsieme di Σ∗"}, 
-                              0));
+chapterOne.push_back(Question("Una configurazione (q,x) di un Automa a stati finiti deterministico con q ∈ Q e x  Σ∗, è detta accettante se:", 
+                              {"q ∈ F", 
+                               "x = ε e q ∈ F", 
+                               "x = ε e q ∈ Q", 
+                               "x = ε"}, 
+                              1));
 
-chapterOne.push_back(Question("Qual è l'elemento neutro della concatenazione di stringhe?", 
-                              {"La stringa vuota ε", 
-                               "Il primo simbolo dell'alfabeto", 
-                               "Un simbolo speciale", 
-                               "Un numero"}, 
-                              0));
+chapterOne.push_back(Question("Sia A Automa a stati finiyi deterministico sull'alfabeto di input ={a,b}, allora nel diagramma degli stati di A:", 
+                              {"Tutti i nodi del diagramma degli stati di A, che corrispondono a stati finali di A, non hanno archi uscenti.", 
+                               "Esiste almeno un nodo del diagramma degli stati di A con esattamente due archi uscenti etichettati \"a\" e con esattamente un arco uscente etichettato \"b\"", 
+                               "Ogni nodo del diagramma degli stati di A ha esattamente un arco uscente etichettato \"a\" e esattamente un arco uscente etichettato \"b\"", 
+                               "il nodo del diagramma degli stati di A corrispondente a q0, non ha archi uscenti."}, 
+                              2));
 
-/* chapterOne.push_back(Question("Cosa succede se concateno una stringa con se stessa 0 volte?", 
-                              {"Ottengo la stringa vuota", 
-                               "Ottengo la stringa stessa", 
-                               "Ottengo una stringa infinita", 
-                               "Ottengo una stringa con un solo carattere"}, 
-                              0)); */
-
-chapterOne.push_back(Question("Quale dei seguenti non è un esempio di alfabeto?", 
-                              {"{1,2,3,4,5}", 
-                               "{a,b,c,d,e}", 
-                               "{0,1}", 
-                               "{Σ∗}"}, 
+chapterOne.push_back(Question("Sia Σ alfabeto finito. Segnare, fra le affermazioni seguenti l'unica affermazione esatta:", 
+                              {"Per ogni L ⊆ Σ*, L ◦ Λ = L", 
+                               "Per ogni L ⊆ Σ*, L ◦ Λ = {ε}", 
+                               "Per ogni L ⊆ Σ*, L ◦ {ε} = Λ", 
+                               "Per ogni L ⊆ Σ*, L ◦ {ε} = L"}, 
                               3));
 
-chapterOne.push_back(Question("Se un linguaggio è un sottoinsieme di Σ∗, allora quale delle seguenti affermazioni è vera?", 
-                              {"Può contenere stringhe di diversa lunghezza", 
-                               "Deve contenere tutte le stringhe di Σ∗", 
-                               "Può contenere solo stringhe di lunghezza fissa", 
-                               "Deve contenere solo la stringa vuota"}, 
-                              0));
+chapterOne.push_back(Question("Siano L1 = {ε , ab} ed L2 = {ε, bbab, bb}: Segnare fra le seguenti affermazioni l'unica esatta:", 
+                              {"bbbab ∈ L1 ◦ L2", 
+                               "ε ∉ L1 ◦ L2", 
+                               "abbbab ∉  L1 ◦ L2", 
+                               "ε ∈ L1 ◦ L2"}, 
+                              3)); 
 
-chapterOne.push_back(Question("Qual è il simbolo della concatenazione tra stringhe?", 
-                              {"◦ (oppure viene omesso)", 
-                               "+", 
-                               "*", 
-                               "/"}, 
-                              0));
+chapterOne.push_back(Question("Sia L = {ab, bbb}. Segnare fra le seguenti affermazioni l'unica sbagliata:", 
+                              {"bbbab ∈ L2", 
+                               "bba ∈ L2", 
+                               "bbbabbbb ∈ L*", 
+                               "bbbabbbb ∈ L3"}, 
+                              1));
 
-chapterOne.push_back(Question("Se x è una stringa e |x| = 5, cosa significa?", 
-                              {"x ha lunghezza 5", 
-                               "x ha 5 simboli diversi", 
-                               "x ha 5 concatenazioni", 
-                               "x è un numero"}, 
-                              0));
+chapterOne.push_back(Question("Sia L = {ab, bbb}. Segnare fra le seguenti affermazioni l'unica sbagliata:", 
+                                {"bbbabbbb ∈ L*", 
+                                 "bb ∈ L*", 
+                                 "bbbab ∈ L*", 
+                                 "bbbabbbb ∈ L3"}, 
+                                1));
 
-chapterOne.push_back(Question("Se Σ = {0,1}, quale delle seguenti stringhe appartiene a Σ∗?", 
+chapterOne.push_back(Question("Nella definizione di Automa a stati finiti non Deterministico (ASFND) la funzione di transizione δn è così definita:", 
+                              {"δn : Q U Σ -> Σ", 
+                               "δn : Q x Σ -> P(Q)", 
+                               "δn : Q x Σ* -> P(Q)", 
+                               "δn : Q x Σ -> Σ"}, 
+                               1));
+
+/* chapterOne.push_back(Question("Se Σ = {0,1}, quale delle seguenti stringhe appartiene a Σ∗?", 
                               {"1010", 
                                "abc", 
                                "ε", 
                                "Entrambe 1010 e ε"}, 
-                              3));
+                              3)); */
 
 chapterOne.push_back(Question("Quale dei seguenti insiemi rappresenta un alfabeto valido?", 
                               {"{a,b,c}", 

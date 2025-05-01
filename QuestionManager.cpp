@@ -956,6 +956,136 @@ chapterOne.push_back(Question("Quale tra queste è una proprietà della concaten
                                                  "Un linguaggio che può essere descritto da una grammatica sensibile al contesto", 
                                                  "Un linguaggio che può essere descritto da una macchina di Turing"}, 
                                                 0));
+            // logica
+            chapterTree.push_back(Question("Una derivazione senza ipotesi è una sequenza finita di:", 
+                                                {"Assiomi e conclusioni di regole di inferenza", 
+                                                 "Assiomi, premesse e regole di inferenza", 
+                                                 "Assiomi e permesse di regole di inferenza", 
+                                                 "Assiomi e regole di inferenza"}, 
+                                                1));
+            chapterTree.push_back(Question("Quale parte è definita nella parte sintattica di un sistema formale D ?", 
+                                                {"L'insieme delle regole valide", 
+                                                 "Un sottoinsieme di W, i teoremi del sistema formale", 
+                                                 "Un sottoinsieme W di S*, le fbf", 
+                                                 "Un sottoinsieme di Ax degli assiomi validi"}, 
+                                                2));
+            chapterTree.push_back(Question("Quale parte è definita nella parte sintattica di un sistema formale D ?", 
+                                                {"Un insieme di regole di inferenza", 
+                                                 "Un sottoinsieme di W, i teoremi del sistema formale", 
+                                                 "Un sottoinsieme di Ax degli assiomi validi", 
+                                                 "L'insieme delle regole valide"}, 
+                                                0));
+
+            chapterTree.push_back(Question("Quale parte non è definita nella parte sintattica di un sistema formale D ?", 
+                                                {"Un insieme di regole di inferenza", 
+                                                 "Un sottoinsieme W di S*, le fbf", 
+                                                 "Un sottoinsieme di Ax di W degli assiomi", 
+                                                 "L'insieme delle regole valide"}, 
+                                                3));
+            chapterTree.push_back(Question("Quale parte non è definita nella parte sintattica di un sistema formale D ?", 
+                                                {"Un insieme di S* di regole inferenza", 
+                                                 "Un sottoinsieme W di S*, le fbf", 
+                                                 "Un sottoinsieme di Ax di W degli assiomi", 
+                                                 "Un alfabeto S"}, 
+                                                0));
+            chapterTree.push_back(Question("Quale parte è definita nella parte sintattica di un sistema formale D ?", 
+                                                {"Un alfabeto S", 
+                                                 "Un sottoinsieme di W, i teoremi del sistema formale", 
+                                                 "Un sottoinsieme di Ax degli assiomi validi", 
+                                                 "L'insieme delle regole valide"}, 
+                                                0));
+            chapterTree.push_back(Question("Quale parte è definita nella parte sintattica di un sistema formale D ?", 
+                                                {"Un insieme di S* di regole inferenza", 
+                                                 "Un sottoinsieme di W, i teoremi del sistema formale", 
+                                                 "Un sottoinsieme di Ax di W degli assiomi", 
+                                                 "L'insieme delle regole valide"}, 
+                                                2));
+            chapterTree.push_back(Question("Quale parte non è definita nella parte sintattica di un sistema formale D ?", 
+                                                {"Un insieme di S* di regole inferenza", 
+                                                 "Un sottoinsieme di W, i teoremi del sistema formale", 
+                                                 "Un sottoinsieme di Ax di W degli assiomi", 
+                                                 "Un alfabeto S"}, 
+                                                1));
+            chapterTree.push_back(Question("Quale parte non è definita nella parte sintattica di un sistema formale D ?", 
+                                                {"Un insieme di regole di inferenza", 
+                                                 "Un sottoinsieme di W, i teoremi del sistema formale", 
+                                                 "Un sottoinsieme di Ax degli assiomi validi", 
+                                                 "Un alfabeto S"}, 
+                                                1));
+            chapterTree.push_back(Question("in un sistema formale, quale delle seguenti affermazioni può essere derivata dal fatto che abbiamo {𝛼} ⊢ 𝛽 e ⊢ 𝛼", 
+                                                {"{𝛼, 𝛽} è una regola per il sistema formale in esame", 
+                                                 "Il sistema formale è consistente", 
+                                                 "𝛽 è un teorema", 
+                                                 "𝛼 non è un teorema"}, 
+                                                2)); 
+            chapterTree.push_back(Question("Sia Γ un insieme finito di fbf di un sistema formale D; La definizione Con_D(Γ) è:", 
+                                                {"{𝛼 ∈ 𝑊 : Γ ⊢ 𝛼}", 
+                                                 "La domanda non ha senso , deve essere un insieme di ipotesi", 
+                                                 "{𝛼 ∈ Γ : Γ ⊢ 𝛼}", 
+                                                 "se 𝛼 ∈ Γ allora Γ ⊢ 𝛼"}, 
+                                                0));
+            chapterTree.push_back(Question("M ⊢_D 𝛼 si legge:", 
+                                                {"M deriva (prova) 𝛼 nel sistema formale", 
+                                                 "D deriva (prova) M da 𝛼", 
+                                                 "M deriva (prova) 𝛼 da D", 
+                                                 "𝛼 è derivabile in D"}, 
+                                                0));
+            chapterTree.push_back(Question("in un sistema formale, l'insieme Ax degli assiomi è", 
+                                                {"Un sottoinsieme di S", 
+                                                 "Un sottoinsieme infinito delle fbf", 
+                                                 "Un sottoinsieme finito delle fbf", 
+                                                 "Nessuna delle altre risposte."}, 
+                                                3)); 
+            chapterTree.push_back(Question("in un sistema formale la regola è:", 
+                                                {"Una relazione", 
+                                                 "Una funzione", 
+                                                 "Una sequenza di fbf", 
+                                                 "Nessuna delle altre risposte."}, 
+                                                0));  
+            chapterTree.push_back(Question("Una derivazione in un sistema è una sequenza finita di:", 
+                                                {"Assiomi, ipotesi e conclusioni di regole di inferenza", 
+                                                 "Assiomi, premesse e regole di inferenza", 
+                                                 "Assiomi e premesse di regole di inferenza", 
+                                                 "Assiomi e regole di inferenza"}, 
+                                                0));
+            chapterTree.push_back(Question("Scrivendo ⊢_D 𝛼", 
+                                                {"è un assioma di D", 
+                                                 "una ipotei di D", 
+                                                 "un teorema di D", 
+                                                 "una conclusione di D"}, 
+                                                2));
+            chapterTree.push_back(Question("L'assioma Ak di CL è", 
+                                                {"(kP)Q)=(kP)", 
+                                                 "(kP)Q)=Q", 
+                                                 "(k(PQ))=P", 
+                                                 "(kP)Q)=P"}, 
+                                                3));
+            chapterTree.push_back(Question("Secondo la Definizione 2.9, un insieme Γ di fbf è una teoria in D se e solo se:", 
+                                                {"Γ è un insieme finito di assiomi", 
+                                                "Γ è chiuso rispetto alla relazione ⊢ₚ (Conₚ(Γ) = Γ) , Γ ⊢ₚ 𝛼 segue 𝛼 ∈ Γ", 
+                                                "Γ contiene tutti i teoremi di D", 
+                                                "Γ è un sottoinsieme delle regole di inferenza"}, 
+                                                1));
+            chapterTree.push_back(Question("La teoria pura di un sistema formale D è definita come:", 
+                                                {"L'insieme di tutte le fbf di D", 
+                                                "L'insieme Conₚ(∅)=Conₚ(Ax), cioè le conseguenze degli assiomi senza ipotesi aggiuntive", 
+                                                "L'insieme delle regole di inferenza di D", 
+                                                "Un insieme massimale di fbf coerenti"}, 
+                                                1));
+            chapterTree.push_back(Question("Quando due insiemi di fbf Γ e Γ' hanno Conₚ(Γ) = Conₚ(Γ'), significa che:", 
+                                                {"Γ e Γ' sono entrambi vuoti", 
+                                                "Γ e Γ' sono insiemi inconsistenti", 
+                                                "Γ e Γ' generano le stesse conseguenze logiche in D, Conₚ(Γ) = Conₚ(Γ') , pur potendo essere diversi", 
+                                                "Un insieme massimale di fbf coerenti"}, 
+                                                2));
+            chapterTree.push_back(Question("Una teoria pura è sempre:", 
+                                                {"Un insieme incoerente.", 
+                                                "Una teoria (chiusa rispetto a ⊢ₚ)", 
+                                                "Un insieme finito.", 
+                                                "Un insieme privo di assiomi."}, 
+                                                1));
+                                              
+            
             
 
         }

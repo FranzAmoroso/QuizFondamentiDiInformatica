@@ -48,12 +48,15 @@ void QuizGame::startQuiz() {
 }
 
 void QuizGame::chooseChapter() {
-    cout << "Scegli un capitolo da 1 a 2 (altri ancora non disponibilis)." << endl;
+    cout << "1. Linguaggi formali" << endl;
+    cout << "2. Modelli computazionali" << endl;
+    cout << "3. Logica" << endl;
+    cout << "4. lambda calcolo" << endl;
     int chapterChoice;
     cin >> chapterChoice;
     
     // Imposta il capitolo selezionato
-    if (chapterChoice == 1 || chapterChoice == 2) {
+    if (chapterChoice >= 1 || chapterChoice <= 3) {
         chapter = chapterChoice;
         cout << "Hai scelto Capitolo " << chapter << "." << endl;
     } else {

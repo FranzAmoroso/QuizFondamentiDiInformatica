@@ -49,9 +49,24 @@ void QuizGame::startQuiz() {
 
 void QuizGame::chooseChapter() {
     cout << "1. Linguaggi formali" << endl;
-    cout << "2. Modelli computazionali" << endl;
-    cout << "3. Logica" << endl;
-    cout << "4. lambda calcolo" << endl;
+    cout << "2. Espressioni regolari" << endl;
+    cout << "3. Sistemi formali" << endl;
+    cout << "(work in progress.. )  linguaggi regolari" << endl;
+    cout << "(work in progress.. )  lambda non contestuali" << endl;
+ //   cout << "2. Espressioni regolari" << endl;
+    cout << "(work in progress.. )  Pumping lemma" << endl;
+    cout << "(work in progress.. )  Grammatiche di Chonsky" << endl;
+    cout << "(work in progress.. )  Forma normale di Backus" << endl;
+    cout << "(work in progress.. )  Forma normale di Greibach" << endl;
+    cout << "(work in progress.. )  Diagrammi sintattici" << endl;
+    cout << "(work in progress.. )  Calcolabilità secondo turing" << endl;
+    cout << "(work in progress.. )  Macchine di turing a nastro singolo" << endl;
+    cout << "(work in progress.. )  Configurazioni e transizioni della macchina di turing" << endl;
+    cout << "(work in progress.. )  Macchina di turing deterministica" << endl;
+    cout << "(work in progress.. )  Macchina di Turing multinastro" << endl;
+    cout << "(work in progress.. )  Macchina di Turing universale" << endl;
+//    cout << "3. Sistemi formali" << endl;
+    cout << "(work in progress.. )  lambda calcolo" << endl;
     int chapterChoice;
     cin >> chapterChoice;
     

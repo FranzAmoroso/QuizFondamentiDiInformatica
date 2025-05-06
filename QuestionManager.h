@@ -12,9 +12,9 @@ public:
     void askQuestion(const Question& question) const;  // Aggiungi questa dichiarazione
 private:
     void loadQuestions();
-    std::vector<Question> chapterOne;
-    std::vector<Question> chapterTwo;
-    std::vector<Question> chapterTree;
+    std::vector<Question> LF;
+    std::vector<Question> ER;
+    std::vector<Question> SF;
     std::vector<Question> chapterFor;
 };
 
